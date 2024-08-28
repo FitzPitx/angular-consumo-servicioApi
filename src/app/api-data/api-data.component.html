@@ -1,0 +1,7 @@
+<div>
+    <button class="btnInfoApi" (click)="fetchData()">Recoger Informacion de la API</button>
+    <div *ngIf="apiData">
+        <h2>API Information</h2>
+        <pre>{{ apiData | json }}</pre>
+    </div>
+</div>
